@@ -27,6 +27,10 @@
       navServices: "Servicios",
       navContact: "Contacto",
       projectDetails: "Detalles",
+      catLogoDescription: "Sistema de catálogos digitales con secciones independientes para tecnología y perfumería, diseñado para explorar productos desde el móvil o la computadora.",
+      catLogoType: "CATÁLOGO DIGITAL",
+      catLogoTech: "Catálogo tecnología ↗",
+      catLogoPerfume: "Catálogo perfumería ↗",
       servicesEyebrow: "06 / SERVICIOS",
       servicesTitle: "Ideas que pueden convertirse en una web.",
       servicesLead: "Apoyo a pequeños negocios y proyectos personales con sitios claros, adaptables y fáciles de usar.",
@@ -135,6 +139,10 @@
       navServices: "Services",
       navContact: "Contact",
       projectDetails: "Details",
+      catLogoDescription: "A digital catalog system with separate technology and perfumery sections, designed for browsing products on mobile and desktop.",
+      catLogoType: "DIGITAL CATALOG",
+      catLogoTech: "Technology catalog ↗",
+      catLogoPerfume: "Perfumery catalog ↗",
       servicesEyebrow: "06 / SERVICES",
       servicesTitle: "Ideas that can become a website.",
       servicesLead: "I help small businesses and personal projects with clear, responsive, easy-to-use websites.",
@@ -462,6 +470,28 @@ document.querySelectorAll('a[href^="#"]').forEach((enlace) => {
       },
       technologies: ["HTML5", "CSS3", "JavaScript"],
       url: "https://jasbh121101.github.io/Clickgame/"
+    },
+
+    catlogo: {
+      title: { es: "JB Collections", en: "JB Collections" },
+      description: {
+        es: "Sistema de catálogos digitales que reúne las secciones de tecnología y perfumería bajo una misma experiencia de marca.",
+        en: "A digital catalog system bringing technology and perfumery sections together under one branded experience."
+      },
+      objective: {
+        es: "Organizar dos líneas de productos en catálogos diferenciados y facilitar la exploración desde dispositivos móviles y computadoras.",
+        en: "Organize two product lines into distinct catalogs and make browsing convenient on mobile devices and desktop computers."
+      },
+      features: {
+        es: ["Catálogo de tecnología", "Catálogo de perfumería", "Diseño adaptable a diferentes pantallas", "Accesos directos a cada catálogo"],
+        en: ["Technology catalog", "Perfumery catalog", "Responsive layouts", "Direct links to each catalog"]
+      },
+      learning: {
+        es: "Organización de un proyecto con varias secciones públicas y coherencia visual entre catálogos.",
+        en: "Structuring a project with multiple public sections and maintaining visual consistency across catalogs."
+      },
+      technologies: ["HTML5", "CSS3", "JavaScript", "Supabase"],
+      url: "https://jasbh121101.github.io/Cat-logo/"
     },
 
     cafe: {
