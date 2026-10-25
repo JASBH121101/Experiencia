@@ -2558,3 +2558,39 @@ body.modal-open {
     transform: none;
   }
 }
+
+/* JB Collections: vista previa de proyecto en el portafolio */
+.preview-catlogo {
+  position: relative; display: flex; flex-direction: column; justify-content: space-between;
+  min-height: 250px; overflow: hidden; padding: 24px; color: #f4f6ff;
+  background: radial-gradient(ellipse at 78% 25%, rgba(105,126,255,.35), transparent 42%),
+    radial-gradient(ellipse at 15% 100%, rgba(68,205,220,.17), transparent 48%),
+    linear-gradient(135deg,#101a31,#172a4b 60%,#101827);
+}
+.preview-catlogo::after {
+  content: ""; position: absolute; width: 190px; height: 190px; right: -65px; bottom: -95px;
+  border: 1px solid rgba(169,190,255,.22); border-radius: 50%;
+  box-shadow: 0 0 0 22px rgba(169,190,255,.035), 0 0 0 46px rgba(169,190,255,.025);
+  pointer-events: none;
+}
+.catlogo-preview-top,.catlogo-preview-content,.catlogo-preview-categories { position: relative; z-index: 1; }
+.catlogo-preview-top { display: flex; align-items: center; gap: 12px; }
+.catlogo-monogram {
+  display: grid; place-items: center; width: 42px; height: 42px;
+  border: 1px solid rgba(151,174,255,.65); border-radius: 13px;
+  background: rgba(101,128,255,.18); color: #dce5ff; font-weight: 800; letter-spacing: -.06em;
+}
+.catlogo-preview-label,.catlogo-kicker { color: #aebce0; font: .62rem var(--mono); letter-spacing: .16em; }
+.catlogo-preview-content { display: grid; gap: 10px; text-align: center; }
+.catlogo-preview-content strong { font-size: clamp(1.7rem,4vw,2.3rem); letter-spacing: -.06em; }
+.catlogo-preview-content strong span { color: #9eb4ff; }
+.catlogo-preview-categories { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+.catlogo-preview-categories span {
+  padding: 7px 10px; border: 1px solid rgba(180,197,255,.24); border-radius: 999px;
+  color: #d4def7; font: .58rem var(--mono); letter-spacing: .08em;
+}
+.catlogo-links { margin-top: 12px; }
+@media (max-width: 430px) {
+  .preview-catlogo { min-height: 220px; padding: 20px; }
+  .catlogo-preview-label { font-size: .55rem; }
+}
